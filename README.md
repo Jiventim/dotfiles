@@ -1,4 +1,4 @@
-to only clone the nvim directory:
+# to only clone the nvim directory:
 
 ## Clone the repository and set up sparse checkout
 ```bash
