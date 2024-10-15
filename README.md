@@ -15,6 +15,6 @@ mv nvim/* ~/.config/nvim/
 ```
 ## Navigate out and remove the cloned repository
 ```bash
-cd ~  # Go back to home directory
+cd ~ 
 rm -rf ~/dotfiles  # Remove the dotfiles directory
 ```
