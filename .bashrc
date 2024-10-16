@@ -124,6 +124,7 @@ mkcd() {
 }
 shopt -s autocd #cd into directory by typing its name
 #aliases
+alias ls='lsd' #shows icons with highlights
 alias sbash='source ~/.bashrc'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -131,3 +132,18 @@ alias nv='nvim'
 alias cls='clear'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias g='git'
+
+#shows todays date
+echo -e '\n\n'
+date_str="$(date "+%A, %B %d, %Y")"
+cols=$(tput cols)
+# Generate figlet output
+figlet_output=$(echo "$date_str" | figlet)
+# Calculate the width of the figlet output
+figlet_width=$(echo "$figlet_output" | head -n 1 | wc -c)
+# Calculate padding to center the figlet output
+padding=$(((cols - figlet_width) / 2))
+# Print the figlet output with the calculated padding
+echo "$figlet_output" | while IFS= read -r line; do
+  printf "%*s\n" $((padding + figlet_width)) "$line"
+done
