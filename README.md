@@ -1,3 +1,13 @@
+# setup
+```bash
+git clone git@github.com:Jiventim/dotfiles.git #clone the repo
+mv ~/dotfiles ~/.dotfiles #rename
+cd ~/.dotfiles #cd into it
+chmod +x setup.sh #give permission
+./setup.sh #run script
+```
+
+
 # to only clone the nvim directory:
 
 ## Clone the repository and set up sparse checkout
