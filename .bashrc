@@ -133,17 +133,29 @@ alias cls='clear'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias g='git'
 
-#shows todays date
-echo -e '\n\n'
-date_str="$(date "+%A, %B %d, %Y")"
-cols=$(tput cols)
-# Generate figlet output
-figlet_output=$(echo "$date_str" | figlet)
-# Calculate the width of the figlet output
-figlet_width=$(echo "$figlet_output" | head -n 1 | wc -c)
-# Calculate padding to center the figlet output
-padding=$(((cols - figlet_width) / 2))
-# Print the figlet output with the calculated padding
-echo "$figlet_output" | while IFS= read -r line; do
-  printf "%*s\n" $((padding + figlet_width)) "$line"
-done
+#shows today's date only one time
+# Path to the temporary file
+DASHBOARD_SHOWN_FILE="/tmp/.dashboard_shown"
+
+# Check if the file exists
+if [ ! -f "$DASHBOARD_SHOWN_FILE" ]; then
+  # Show today's date with figlet
+  echo -e '\n\n'
+  date_str="$(date "+%A, %B %d, %Y")"
+  cols=$(tput cols)
+
+  # figlet output
+  figlet_output=$(echo "$date_str" | figlet)
+
+  figlet_width=$(echo "$figlet_output" | head -n 1 | wc -c)
+
+  padding=$(((cols - figlet_width) / 2))
+
+  # figlet output with the calculated padding
+  echo "$figlet_output" | while IFS= read -r line; do
+    printf "%*s\n" $((padding + figlet_width)) "$line"
+  done
+
+  # temporary file to indicate the dashboard has been shown
+  touch "$DASHBOARD_SHOWN_FILE"
+fi
