@@ -1,7 +1,6 @@
 # setup
 ```bash
-git clone git@github.com:Jiventim/dotfiles.git #clone the repo
-mv ~/dotfiles ~/.dotfiles #rename necessary
+git clone git@github.com:Jiventim/dotfiles ~/.dotfiles #clone the repo
 cd ~/.dotfiles #cd into it
 chmod +x setup.sh #give permission
 ./setup.sh #run script
