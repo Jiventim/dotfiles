@@ -4,6 +4,7 @@ git clone git@github.com:Jiventim/dotfiles ~/.dotfiles #clone the repo
 cd ~/.dotfiles #cd into it
 chmod +x setup.sh #give permission
 ./setup.sh #run script
+source ~/.bashrc #source
 ```
 
 
