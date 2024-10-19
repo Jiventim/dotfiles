@@ -23,8 +23,8 @@ git checkout main
 mkdir -p ~/.config/nvim
 mv nvim/* ~/.config/nvim/
 ```
-## Navigate out and remove the cloned repository
+## Navigate out and remove the cloned repository (optional)
 ```bash
-cd ~ 
-rm -rf ~/dotfiles  # optional
+cd
+rm -rf ~/dotfiles
 ```
