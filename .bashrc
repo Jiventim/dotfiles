@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 #oh-my-posh
-eval "$(oh-my-posh init bash --config ~/.dotfiles/powerlevel10k_lean.omp.json)"
+eval "$(~/.local/bin/oh-my-posh init bash --config ~/.dotfiles/powerlevel10k_lean.omp.json)"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
