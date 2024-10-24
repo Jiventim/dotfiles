@@ -32,6 +32,14 @@ mkcd() {
   mkdir $1 && cd $1
 }
 
+install() {
+  sudo apt-get install $1 -y
+}
+
+remove() {
+  sudo apt remove --purge $1 -y
+}
+
 #cd into directory by typing its name
 shopt -s autocd
 
