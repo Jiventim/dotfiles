@@ -50,6 +50,7 @@ alias ...='cd ../..'
 alias nv='nvim'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias g='git'
+alias logout='loginctl terminate-session $XDG_SESSION_ID'
 
 #-----------DASHBOARD-------------
 
