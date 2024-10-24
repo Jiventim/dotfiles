@@ -8,5 +8,8 @@
 --copy to clipboard
 vim.keymap.set("v", "<C-c>", '"+y', { desc = "Copy to clipboard" })
 
+--cut to clipboard
+vim.keymap.set("v", "<C-x>", '"+d', { desc = "cut to clipboard" })
+
 --select all
 vim.keymap.set("n", "<C-a>", "gg0vG$", { desc = "select all" })
