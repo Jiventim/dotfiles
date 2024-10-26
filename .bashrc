@@ -51,7 +51,7 @@ remove() {
 shopt -s autocd
 
 #aliases
-alias ls='lsd' #shows icons with highlights
+alias ls='eza --icons=always'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias nv='nvim'
