@@ -5,8 +5,9 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- config starts here --
--- uncomment the below line if you're using wsl on windows
--- windows wsl config here
+
+-- uncomment the line below if you're using wsl on windows
+-- config.default_prog = { 'wsl.exe', '--cd', '~' }
 
 -- color scheme
 config.color_scheme = "Catppuccin Mocha"
@@ -14,18 +15,24 @@ config.color_scheme = "Catppuccin Mocha"
 -- disable header
 config.window_decorations = "RESIZE"
 
---
+-- use a normal tab bar
 config.use_fancy_tab_bar = false
+
+-- start index = 0
 config.tab_and_split_indices_are_zero_based = true
+
 -- show tab bar only when the new tab is created
 config.hide_tab_bar_if_only_one_tab = true
 
--- tabs
+-- tabs config
 config.window_frame = {
+	
+	--tab font
 	font = wezterm.font({ family = "Roboto", weight = "Light" }),
-
+	
 	-- The size of the font in the tab bar.
 	font_size = 10.0,
+	
 	-- The overall background color of the tab bar when
 	-- the window is focused
 	active_titlebar_bg = "#1e1e2e",
@@ -56,7 +63,7 @@ config.window_background_image_hsb = {
 	saturation = 1.0,
 }
 
---window opacity not really useful while using background image
+--window opacity. not useful while using background image
 config.window_background_opacity = 1.0
 
 --text background opacity
