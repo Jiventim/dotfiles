@@ -1,3 +1,10 @@
+# bash completion
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+fi
+
+export TERMINAL=wezterm
+
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
@@ -86,4 +93,9 @@ fi
 dashboard() {
   rm /tmp/.dashboard_shown
   source .bashrc
+}
+
+# load image
+img() {
+  wezterm imgcat $1
 }

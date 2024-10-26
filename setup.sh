@@ -1,9 +1,15 @@
 #!/bin/bash
-#symlinks for nvim and bashrc
+
+#----some soft links----
+
+#wezterm
+ln -sf ~/.dotfiles/.wezterm.lua ~/.wezterm.lua
+
+#neovim & bashrc
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 
-# symlinks for Oh My Posh theme
+# Oh My Posh
 ln -sf ~/dotfiles/powerlevel10k_lean.omp.json ~/.poshthemes/powerlevel10k_lean.omp.json
 
 # Source .bashrc
