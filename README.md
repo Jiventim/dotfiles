@@ -8,7 +8,7 @@ source ~/.bashrc #source
 ```
 
 
-# to only clone the nvim directory:
+# to only clone the neovim config
 
 ```bash
 #Clone the repository and set up sparse checkout
