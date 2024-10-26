@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 -- config starts here --
 
 -- uncomment the line below if you're using wsl on windows
--- config.default_prog = { 'wsl.exe', '--cd', '~' }
+-- config.default_domain = "WSL:<version>"
 
 -- color scheme
 config.color_scheme = "Catppuccin Mocha"
