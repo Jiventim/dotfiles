@@ -29,10 +29,10 @@ config.hide_tab_bar_if_only_one_tab = true
 config.adjust_window_size_when_changing_font_size = false
 
 -- background image
-config.window_background_image = "/home/jiventim/.dotfiles/underwater.png"
+config.window_background_image = "/home/jiventim/.dotfiles/background/ign-0000.png"
 config.window_background_image_hsb = {
 	-- Darken the background image by reducing it to 1/3rd
-	brightness = 0.3,
+	brightness = 0.2,
 
 	-- adjust the hue by scaling its value.
 	-- a multiplier of 1.0 leaves the value unchanged.
@@ -42,18 +42,26 @@ config.window_background_image_hsb = {
 	saturation = 1.0,
 }
 
+config.window_padding = {
+	left = 8,
+	right = 0,
+	top = 8,
+	bottom = 0,
+}
+
 --window opacity (not useful while using background image)
 config.window_background_opacity = 1.0
 
 --text background opacity
-config.text_background_opacity = 0.8
+config.text_background_opacity = 1.0
 
 --font settings
 config.font = wezterm.font("JetBrains Mono NL", { weight = "Light" })
 config.font_size = 12.0
 
+config.default_cursor_style = "SteadyUnderline"
+
 -- multiplexer
---
 config.leader = { key = "Space", mods = "SHIFT", timeout_milliseconds = 2000 }
 config.keys = {
 	{
@@ -61,6 +69,7 @@ config.keys = {
 		mods = "LEADER",
 		key = "t",
 		action = wezterm.action.SpawnTab("CurrentPaneDomain"),
+		cwd = wezterm.home_dir,
 	},
 	{
 		--close the current tab

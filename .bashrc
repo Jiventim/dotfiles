@@ -4,6 +4,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 export TERMINAL=wezterm
+export VISUAL="nvim"
 export EDITOR="nvim"
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -62,6 +63,15 @@ alias logout='loginctl terminate-session $XDG_SESSION_ID'
 
 #-----------DASHBOARD-------------
 
+#yazi
+function y() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
+}
 #shows today's date only one time
 
 # Path to the temporary file
