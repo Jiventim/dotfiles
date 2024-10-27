@@ -96,8 +96,4 @@ dashboard() {
   source .bashrc
 }
 
-# load image
-img() {
-  wezterm imgcat $1
-}
 . "$HOME/.cargo/env"
