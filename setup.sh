@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#----some soft links----
+#----some symlinks----
 
 #wezterm
 ln -sf ~/.dotfiles/.wezterm.lua ~/.wezterm.lua
