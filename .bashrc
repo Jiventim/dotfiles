@@ -4,6 +4,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 export TERMINAL=wezterm
+export EDITOR="nvim"
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
@@ -99,3 +100,4 @@ dashboard() {
 img() {
   wezterm imgcat $1
 }
+. "$HOME/.cargo/env"
