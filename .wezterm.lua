@@ -62,7 +62,7 @@ config.font_size = 12.0
 config.default_cursor_style = "SteadyUnderline"
 
 -- multiplexer
-config.leader = { key = "Space", mods = "SHIFT", timeout_milliseconds = 2000 }
+config.leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 2000 }
 config.keys = {
 	{
 		--open a new tab
