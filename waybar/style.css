@@ -1,0 +1,19 @@
+*{
+    font-family: JetBrainsMono;
+    font-size: 15px;
+    color: white;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#cpu, 
+#memory,
+#backlight, 
+#pulseaudio, 
+#battery, 
+#clock, 
+#network {
+	padding: 0 10px;
+}

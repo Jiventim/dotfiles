@@ -33,12 +33,12 @@ HISTFILE=~/.zsh_history
 # Export terminal and editor
 export TERMINAL=wezterm
 export EDITOR="nvim"
+export LANG="en_US.UTF-8"
 
 
 setopt autocd #cd into directory by typing its name :)
 
-
-bindkey 'L' autosuggest-accept #tab to accept autosuggestions
+bindkey '>' autosuggest-accept #tab to accept autosuggestions
 
 setopt sharehistory #share history between zsh sessions :)
 
@@ -79,6 +79,7 @@ alias nv='nvim'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias g='git'
 alias logout='loginctl terminate-session $XDG_SESSION_ID'
+alias cat='bat'
 
 #yazi
 function y(){
@@ -136,3 +137,4 @@ dashboard(){
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+

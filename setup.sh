@@ -1,17 +1,20 @@
 #!/bin/bash
 
-#----some symlinks----
+# ----some symlinks----
 
-#wezterm
+# wezterm
 ln -sf ~/.dotfiles/.wezterm.lua ~/.wezterm.lua
 
-#neovim
+# neovim
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
 
-#bashrc and zshrc
+# bashrc and zshrc
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
 # Oh My Posh
 mkdir -p ~/.poshthemes
-ln -sf ~/dotfiles/powerlevel10k_lean.omp.json ~/.poshthemes/powerlevel10k_lean.omp.json
+ln -sf ~/.dotfiles/powerlevel10k_lean.omp.json ~/.poshthemes/powerlevel10k_lean.omp.json
+
+#waybar
+ln -sf ~/.dotfiles/waybar ~/.config/waybar

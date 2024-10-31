@@ -12,7 +12,7 @@ local config = wezterm.config_builder()
 -- Enable wayland support explicitly
 config.enable_wayland = true
 
-config.color_scheme = "Catppuccin Macchiato"
+config.color_scheme = "Tokyo Night"
 
 -- disable header
 config.window_decorations = "RESIZE"
@@ -28,29 +28,15 @@ config.hide_tab_bar_if_only_one_tab = true
 
 config.adjust_window_size_when_changing_font_size = false
 
--- background image
-config.window_background_image = "/home/jiventim/.dotfiles/background/ign-0000.png"
-config.window_background_image_hsb = {
-	-- Darken the background image by reducing it to 1/3rd
-	brightness = 0.2,
-
-	-- adjust the hue by scaling its value.
-	-- a multiplier of 1.0 leaves the value unchanged.
-	hue = 1.0,
-
-	-- adjust the saturation
-	saturation = 1.0,
-}
-
 config.window_padding = {
-	left = 8,
+	left = 6,
 	right = 0,
-	top = 8,
+	top = 6,
 	bottom = 0,
 }
 
 --window opacity (not useful while using background image)
-config.window_background_opacity = 1.0
+config.window_background_opacity = 0.8
 
 --text background opacity
 config.text_background_opacity = 1.0
