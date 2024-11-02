@@ -38,7 +38,7 @@ export LANG="en_US.UTF-8"
 
 setopt autocd #cd into directory by typing its name :)
 
-bindkey '>' autosuggest-accept #tab to accept autosuggestions
+bindkey '?' autosuggest-accept #tab to accept autosuggestions
 
 setopt sharehistory #share history between zsh sessions :)
 
@@ -93,6 +93,8 @@ function y(){
 
 #-----------DASHBOARD-------------
 
+#one time dashboard
+
 # Path to the temporary file
 DASHBOARD_SHOWN_FILE="/tmp/.dashboard_shown?"
 
@@ -100,17 +102,6 @@ if [ ! -f "$DASHBOARD_SHOWN_FILE" ]; then
 
   # Show today's date with figlet and lolcat
   date_str="$(date "+%A, %B %d, %Y")"
-
-  # Check if figlet and lolcat are installed
-  if ! command -v figlet &> /dev/null; then
-    echo "figlet is not installed. Please install it."
-    exit 1
-  fi
-
-  if ! command -v lolcat &> /dev/null; then
-    echo "lolcat is not installed. Please install it."
-    exit 1
-  fi
 
   # Get terminal width
   terminal_width=$(tput cols)
@@ -129,6 +120,7 @@ if [ ! -f "$DASHBOARD_SHOWN_FILE" ]; then
   touch "$DASHBOARD_SHOWN_FILE"
 fi
 
+#show dashboard again
 dashboard(){
   rm /tmp/.dashboard_shown?
   source .zshrc
