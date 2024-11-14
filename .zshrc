@@ -91,21 +91,39 @@ function y(){
 	rm -f -- "$tmp"
 }
 
+#-----------DASHBOARD-------------
+
 #one time dashboard
+
 # Path to the temporary file
 DASHBOARD_SHOWN_FILE="/tmp/.dashboard_shown?"
 
 if [ ! -f "$DASHBOARD_SHOWN_FILE" ]; then
 
-tty-clock -s -c -C 7 -b -t
+  # Show today's date with figlet and lolcat
+  date_str="$(date "+%A, %B %d, %Y")"
 
-touch "$DASHBOARD_SHOWN_FILE"
+  # Get terminal width
+  terminal_width=$(tput cols)
+
+  # Use figlet to create the output
+  figlet_output=$(echo "$date_str" | figlet)
+
+  # Calculate the number of spaces needed to center each line
+  while IFS= read -r line; do
+    line_length=${#line}
+    padding=$(( (terminal_width - line_length) / 2 ))
+    printf "%*s\n" $padding "$line"
+  done <<< "$figlet_output" | lolcat
+
+  # Create the temporary file to indicate the dashboard has been shown
+  touch "$DASHBOARD_SHOWN_FILE"
 fi
 
 #show dashboard again
 dashboard(){
-rm "$DASHBOARD_SHOWN_FILE"
-source ~/.zshrc
+  rm /tmp/.dashboard_shown?
+  source .zshrc
 }
 
 
