@@ -123,7 +123,7 @@ fi
 #show dashboard again
 dashboard(){
   rm /tmp/.dashboard_shown?
-  source .zshrc
+  source ~/.zshrc
 }
 
 
