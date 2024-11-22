@@ -29,7 +29,7 @@ config.hide_tab_bar_if_only_one_tab = true
 config.adjust_window_size_when_changing_font_size = false
 
 config.window_padding = {
-	left = 6,
+	left = 10,
 	right = 0,
 	top = 6,
 	bottom = 0,
