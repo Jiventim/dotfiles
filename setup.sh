@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/zsh
 
-# ----some symlinks----
+#symlinks
 
 # wezterm
 ln -sf ~/.dotfiles/.wezterm.lua ~/.wezterm.lua
@@ -8,13 +8,8 @@ ln -sf ~/.dotfiles/.wezterm.lua ~/.wezterm.lua
 # neovim
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
 
-# bashrc and zshrc
-ln -sf ~/.dotfiles/.bashrc ~/.bashrc
-ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-
-# Oh My Posh
-mkdir -p ~/.poshthemes
-ln -sf ~/.dotfiles/powerlevel10k_lean.omp.json ~/.poshthemes/powerlevel10k_lean.omp.json
-
-#waybar
-ln -sf ~/.dotfiles/waybar ~/.config/waybar
+#zsh
+ln -sf ~/.dotfiles/.zsh/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.zsh/.custom-theme ~/.oh-my-zsh/themes/custom.zsh-theme
+ln -sf ~/.dotfiles/.zsh/.aliases ~/.oh-my-zsh/custom/aliases.zsh
+chmod +x ~/.oh-my-zsh/custom/aliases.zsh
