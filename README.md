@@ -12,7 +12,7 @@ source ~/.zshrc
 # to only clone the neovim config
 
 ## Requirement
-### Go to Lazyvim website to download required tools before proceeding
+### Go to Lazyvim website and download the required tools before proceeding
 [Lazyvim.org](https://www.lazyvim.org "visit lazyvim website")
 
 ### also don't forget to backup your current neovim config (if any)
