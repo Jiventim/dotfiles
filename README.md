@@ -13,7 +13,7 @@ source ~/.zshrc
 
 ## Requirement
 ### Go to Lazyvim website to download required tools before proceeding
-[visit Lazyvim.org](https://www.lazyvim.org)
+[Lazyvim.org](https://www.lazyvim.org "visit lazyvim website")
 
 ### also don't forget to backup your current neovim config (if any)
 ```bash
