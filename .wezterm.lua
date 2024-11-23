@@ -6,13 +6,10 @@ local config = wezterm.config_builder()
 
 -- config starts here --
 
--- uncomment the line below if you're using wsl on windows
--- config.default_domain = "WSL:<version>"
-
 -- Enable wayland support explicitly
 config.enable_wayland = true
 
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "tokyonight-storm"
 
 -- disable header
 config.window_decorations = "RESIZE"
@@ -29,9 +26,9 @@ config.hide_tab_bar_if_only_one_tab = true
 config.adjust_window_size_when_changing_font_size = false
 
 config.window_padding = {
-	left = 10,
+	left = 6,
 	right = 0,
-	top = 6,
+	top = 8,
 	bottom = 0,
 }
 
