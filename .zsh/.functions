@@ -10,4 +10,3 @@ install() {
 remove() {
   sudo apt remove --purge $1 -y
 }
-

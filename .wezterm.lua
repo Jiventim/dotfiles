@@ -9,7 +9,7 @@ local config = wezterm.config_builder()
 -- Enable wayland support explicitly
 config.enable_wayland = true
 
-config.color_scheme = "Nord (Gogh)"
+config.color_scheme = "nord"
 
 -- disable header
 config.window_decorations = "RESIZE"

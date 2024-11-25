@@ -1,4 +1,3 @@
-alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias less='less --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -7,7 +6,7 @@ alias egrep='egrep --color=auto'
 # some more ls aliases
  alias ll='ls -alF'
  alias la='ls -A'
- alias l='ls -CF'
+ alias l='ls -l'
 
  alias ls='eza --icons=always'
  alias ..='cd ..'
@@ -16,4 +15,3 @@ alias egrep='egrep --color=auto'
  alias update='sudo apt update && sudo apt upgrade -y'
  alias logout='loginctl terminate-session $XDG_SESSION_ID'
  alias cat='bat'
-
