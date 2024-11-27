@@ -1,13 +1,26 @@
+# colors
 alias grep='grep --color=auto'
 alias less='less --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# some more ls aliases
+# ls aliases
  alias ll='ls -alF'
  alias la='ls -A'
  alias l='ls -l'
 
+# git
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gb='git branch'
+alias gco='git checkout'
+alias gcl='git clone'
+alias gl='git pull'
+alias gp='git push'
+
+# custom
  alias ls='eza --icons=always'
  alias ..='cd ..'
  alias ...='cd ../..'
