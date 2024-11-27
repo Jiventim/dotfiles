@@ -17,8 +17,8 @@ alias gc='git commit'
 alias gb='git branch'
 alias gco='git checkout'
 alias gcl='git clone'
-alias gl='git pull'
-alias gp='git push'
+alias gpl='git pull'
+alias gps='git push'
 
 # custom
  alias ls='eza --icons=always'
