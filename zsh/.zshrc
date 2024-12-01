@@ -1,9 +1,10 @@
-source ~/.dotfiles/zsh/custom-theme
-source ~/.dotfiles/zsh/functions
-source ~/.dotfiles/zsh/aliases
-source ~/.dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
-source ~/.dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source
+. ~/.dotfiles/zsh/custom-theme
+. ~/.dotfiles/zsh/functions
+. ~/.dotfiles/zsh/aliases
+. ~/.dotfiles/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
+. ~/.dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+. ~/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # completion
 autoload -U compinit
@@ -31,3 +32,6 @@ setopt autocd sharehistory histignorealldups
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#cargo bin
+. "$HOME/.cargo/env"
