@@ -33,10 +33,10 @@ config.window_padding = {
 }
 
 --window opacity (not useful while using background image)
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.6
 
 --text background opacity
-config.text_background_opacity = 1.0
+config.text_background_opacity = 0.8
 
 --font settings
 config.font = wezterm.font("JetBrains Mono", { weight = "Light" })
