@@ -1,13 +1,16 @@
-" install : vimplug
-" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"install : vimplug
+"ggle nerdtree
+"curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-" space key as the leader key
+"space key as the leader key
 let mapleader=" "
 set relativenumber "relativenumber
 set encoding=UTF-8
 set mouse=a "enable mouse support
 
-" highlight current line
+syntax on "enable syntax
+"highlight current line
 set cursorline
 :highlight Cursorline cterm=bold ctermbg=black
 
@@ -28,22 +31,22 @@ set showmatch
 
 "don't show default modes
 set noshowmode "disable mode display
-set noruler "disable the cursor position
 
 "plugins
 call plug#begin()
-  Plug 'preservim/nerdtree' "Explorer
-  Plug 'ryanoasis/vim-devicons' "Icons
-  Plug 'vim-airline/vim-airline' "status line
-  Plug 'arcticicestudio/nord-vim' "nord theme
-  Plug 'jiangmiao/auto-pairs' "auto pairs
+Plug 'preservim/nerdtree' "Explorer
+Plug 'ryanoasis/vim-devicons' "Icons
+Plug 'vim-airline/vim-airline' "status line
+Plug 'arcticicestudio/nord-vim' "nord theme
+Plug 'jiangmiao/auto-pairs' "auto pairs
 call plug#end()
 
 "colorscheme
 colorscheme nord
 
-
-" keymaps
-nnoremap <silent><leader>e :NERDTreeToggle<CR> " toggle nerdtree
+"keymaps
+nnoremap <silent><leader>e :NERDTreeToggle<CR> "toggle nerdtree
 "toggle terminal
-nnoremap <silent><C-t> :term<CR>
+nnoremap <silent><C-t> :below term<CR>
+nnoremap <leader>a ggvG$ "select all
+nnoremap <C-c> "+y "copy to clipboard
