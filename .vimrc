@@ -45,8 +45,11 @@ call plug#end()
 colorscheme nord
 
 "keymaps
-nnoremap <silent><leader>e :NERDTreeToggle<CR> "toggle nerdtree
+"nordtree
+nnoremap <silent><leader>e :NERDTreeToggle<CR>
 "toggle terminal
 nnoremap <silent><C-t> :below term<CR>
+"select all
 nnoremap <leader>a ggvG$ "select all
+"copy to clipboard
 nnoremap <C-c> "+y "copy to clipboard
