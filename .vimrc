@@ -44,12 +44,14 @@ call plug#end()
 "colorscheme
 colorscheme nord
 
+let NERDTreeShowHidden=1 "show hidden files in nerdtree
+
 "keymaps
 "nordtree
 nnoremap <silent><leader>e :NERDTreeToggle<CR>
 "toggle terminal
 nnoremap <silent><C-t> :below term<CR>
 "select all
-nnoremap <leader>a ggvG$ "select all
+nnoremap <C-a> ggvG$ "select all
 "copy to clipboard
 nnoremap <C-c> "+y "copy to clipboard
