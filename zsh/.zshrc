@@ -22,11 +22,12 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+setopt autocd sharehistory histignorealldups
+
+#Env
 export TERMINAL=wezterm
 export EDITOR="nvim"
 export LANG="en_US.UTF-8"
-
-setopt autocd sharehistory histignorealldups
 
 #nvm
 export NVM_DIR="$HOME/.nvm"
