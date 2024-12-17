@@ -23,10 +23,10 @@ config.tab_and_split_indices_are_zero_based = true
 -- show tab bar only when a new tab is created
 config.hide_tab_bar_if_only_one_tab = true
 
-config.adjust_window_size_when_changing_font_size = false
+config.adjust_window_size_when_changing_font_size = true
 
 config.window_padding = {
-	left = 6,
+	left = 10,
 	right = 0,
 	top = 0,
 	bottom = 0,
@@ -40,7 +40,7 @@ config.text_background_opacity = 0.8
 
 --font settings
 config.font = wezterm.font("JetBrains Mono", { weight = "Light" })
-config.font_size = 12.0
+config.font_size = 13.0
 
 config.default_cursor_style = "SteadyUnderline"
 
