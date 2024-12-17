@@ -37,8 +37,10 @@ call plug#begin()
 Plug 'preservim/nerdtree' "Explorer
 Plug 'ryanoasis/vim-devicons' "Icons
 Plug 'vim-airline/vim-airline' "status line
+Plug 'sheerun/vim-polyglot' "syntax highlight
 Plug 'arcticicestudio/nord-vim' "nord theme
 Plug 'jiangmiao/auto-pairs' "auto pairs
+Plug 'tpope/vim-commentary' "comments
 call plug#end()
 
 "colorscheme
