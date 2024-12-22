@@ -28,6 +28,7 @@ setopt autocd sharehistory histignorealldups
 export TERMINAL=wezterm
 export EDITOR="nvim"
 export LANG="en_US.UTF-8"
+export MANPAGER="nvim +Man!"
 
 #nvm
 export NVM_DIR="$HOME/.nvm"
